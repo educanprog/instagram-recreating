@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Lucida Grande','Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrap{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    width: 60%;
+    height: 100vh;
+}
+
+.insta-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.insta-phone img{
+    height: 50rem;
+}
+.profile-pic{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.profile-pic img{
+    height: 10rem;
+
+}
+
+.insta-log{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction:column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.box{
+    display: flex;
+    border: 1px solid lightgray;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin-bottom: 10px;
+}
+
+.box::nth-child(1){
+    min-height: 19rem;
+}
+
+.insta-logo{
+    height: 3rem;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color:#0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160,160,160)
+}
+.link-blue{
+    color:#0095f6;
+}
+.app{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size:cover;
+}
+
+.app-download:nth-child(1){
+    background-image:url("./images/apple_store.png");
+}
+.app-download:nth-child(2){
+    background-image: url("./images/gplay.png");
+}
+
+/* Responsividade */
+
+@media(max-width:1024px){
+    .instagram-wrap{
+        width: 90%;
+    }
+}
+
+@media(max-width:650px){
+    .instagram-wrap{
+        width: 90%;
+    }
+    .insta-phone{
+        display:none;
+    }
+    .insta-log{
+        width:100%;
+    }
+}
